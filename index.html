@@ -30,6 +30,13 @@
 		// If data is empty, do nothing
 		if ( data === '' ) return;
 
+		// Check if the data is numeric
+		if ( isNaN( data ) )
+		{
+			alert( 'Please input a number.' );
+			return;
+		}
+
 		document.querySelector( '.display' ).innerHTML = '<span>' + data + '</span> <span>' + sign + '</span> ';
 	}
 </script>
