@@ -27,6 +27,9 @@
 	{
 		const data = document.querySelector( '.data' ).value;
 
+		// If data is empty, do nothing
+		if ( data === '' ) return;
+
 		document.querySelector( '.display' ).innerHTML = '<span>' + data + '</span> <span>' + sign + '</span> ';
 	}
 </script>
