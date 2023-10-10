@@ -25,8 +25,9 @@
 <script>
 	function addToDisplay( sign )
 	{
-		document.querySelector( '.display' ).innerHTML = '<span>' + document.querySelector( '.data' ).value
-														+ '</span> <span>' + sign + '</span> ';
+		const data = document.querySelector( '.data' ).value;
+
+		document.querySelector( '.display' ).innerHTML = '<span>' + data + '</span> <span>' + sign + '</span> ';
 	}
 </script>
 </body>
